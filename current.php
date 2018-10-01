@@ -4,7 +4,7 @@
 <div class="row p-4">
     <?php
 
-  $cricketMatchesTxt = file_get_contents("http://cricapi.com/api/cricket/?apikey=$api_key");	// change with your API key
+  $cricketMatchesTxt = file_get_contents("http://cricapi.com/api/cricket/?apikey=$api_ke");	// change with your API key
   $cricketMatches = json_decode($cricketMatchesTxt);
 
 

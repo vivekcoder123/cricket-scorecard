@@ -31,9 +31,14 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
-            target="_blank">
-            <strong class="mr-2">Download<small class="text-success"> android app</small></strong>
+          <a href="https://test.instamojo.com/@vivekrautela000/" rel="im-checkout" data-behaviour="remote" data-style="light" data-text="Add Money"></a>
+<script src="https://js.instamojo.com/v1/button.js"></script>
+
+   <?php
+
+$api = new Instamojo\Instamojo('test_50efd2a7a3df62447c5f2062bee','test_8860b71139ca7f630ee5d183096','https://test.instamojo.com/api/1.1/');
+
+    ?>
           </a>
         </li>
       </ul>

@@ -16,11 +16,10 @@ else if(isset($_GET['code'])){
 
 $oAuth=new Google_Service_Oauth2($gclient);
 $userdata=$oAuth->userinfo_v2_me->get();
-var_dump($userdata);
 $_SESSION['email']=$userdata['email'];
 echo "<br>";
 echo $userdata['gender'];
-//header('Location:dashboard.php?current');
+header('Location:dashboard.php?current');
 exit();
 
 
