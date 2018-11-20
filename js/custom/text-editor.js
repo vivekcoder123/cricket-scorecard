@@ -1504,11 +1504,10 @@ var G_EDITOR = (function($, g_editor) {
                 var value = $(this).attr("data-id");
                 selected_object.forEachObject(function(a) {
                     a.set('fontFamily', value);
-
+                });
+		    selected_object.set("fontFamily",value);
                     g_editor.canvas.renderAll();
                     g_editor.save_canvas();
-
-                });
                 // add_curved_text(selected_object.get("originalText"),selected_object.get("top"),selected_object.get("left"));
                 // g_editor.canvas.renderAll();
             }
